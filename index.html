@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced To-Do List Tracker</title>
+    <link rel="stylesheet" href="styless.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"> <!-- For icons -->
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1><i class="fas fa-list-check"></i> To-Do List Tracker</h1>
+            <button id="theme-toggle"><i class="fas fa-moon"></i></button>
+        </header>
+        
+        <div class="stats">
+            <span id="total-count">Total: 0</span>
+            <span id="pending-count">Pending: 0</span>
+            <span id="completed-count">Completed: 0</span>
+        </div>
+        
+        <div class="input-section">
+            <input type="text" id="task-input" placeholder="Add a new task...">
+            <input type="date" id="due-date-input">
+            <button id="add-btn"><i class="fas fa-plus"></i> Add Task</button>
+        </div>
+        
+        <div class="filters">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="pending">Pending</button>
+            <button class="filter-btn" data-filter="completed">Completed</button>
+        </div>
+        
+        <ul id="task-list"></ul>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
